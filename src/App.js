@@ -15,10 +15,14 @@ function App() {
     {city.map( item=>{
       const {id, cityName, images, description} = item;
       return(
+        <div key={id}  >
         <div className='container'>
           <h2> {cityName} </h2>
+          <div >
           <Carousel imagesMyProps={images} />
+          </div>
           <p> {description} </p>
+        </div>
         </div>
       )
     } )}
