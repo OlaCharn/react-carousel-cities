@@ -26,6 +26,9 @@ function App() {
         </div>
       )
     } )}
+    <div>
+    <button onClick={ ()=> setCity( [] ) }> CLEAR ALL </button>
+    </div>
 
     </div>
   );
